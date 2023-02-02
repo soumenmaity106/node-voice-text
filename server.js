@@ -4,8 +4,8 @@ const app = express();
 
 app.use(express.static(__dirname + "/public"));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+app.get("/voice-text", (req, res) => {
+  res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 const port = process.env.PORT || 8080;
